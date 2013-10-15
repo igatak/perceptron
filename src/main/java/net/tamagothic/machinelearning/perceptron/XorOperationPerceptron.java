@@ -1,9 +1,9 @@
 package net.tamagothic.machinelearning.perceptron;
 
-public class EorOperationPerceptron {
+public class XorOperationPerceptron {
 	private final SimplePerceptron perceptron;
 
-	public EorOperationPerceptron(int inputUnitSize, int outputUnitSize, double learningRate) {
+	public XorOperationPerceptron(int inputUnitSize, int outputUnitSize, double learningRate) {
 		this.perceptron = new SimplePerceptron(inputUnitSize, outputUnitSize, learningRate);
 	}
 
@@ -40,7 +40,7 @@ public class EorOperationPerceptron {
 	}
 
 	public static void main(String[] args) {
-		EorOperationPerceptron operator = new EorOperationPerceptron(2, 1, 0.3);
+		XorOperationPerceptron operator = new XorOperationPerceptron(2, 1, 0.3);
 		operator.train();
 
 		System.out.println(operator.operate(new double[] {
